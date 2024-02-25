@@ -1,11 +1,12 @@
 import { withRoot } from "@/hocs/root.tsx";
+import { Calendar } from "@/components/ui/calendar.tsx";
 
-function Dashboard() {
+const Dashboard = () => {
   return (
     <div>
-      <h1>Dashboard</h1>
+      <Calendar />
     </div>
   );
-}
+};
 
 export default withRoot(Dashboard);

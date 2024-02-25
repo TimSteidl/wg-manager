@@ -7,25 +7,22 @@ function Home() {
   return (
     <WavyBackground className="max-w-4xl mx-auto pb-40">
       <center className={"pt-32"}>
+        <h1 className={"text-3xl pb-4"}>Willkommen im Wg.Manager!</h1>
         <Grid container spacing={3}>
-          <Grid item xs={2}></Grid>
-          <Grid item xs={4}>
+          <Grid item xs={1}></Grid>
+          <Grid item xs={5}>
             <Card>
               <CardTitle className={"pt-2"}>Dashboard</CardTitle>
-              <CardContent>
-                <p>Willkommen im Wg-Manager</p>
-              </CardContent>
+              <CardContent></CardContent>
             </Card>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={5}>
             <Card>
               <CardTitle className={"pt-2"}>Bashboard</CardTitle>
-              <CardContent>
-                <p>Tschüss</p>
-              </CardContent>
+              <CardContent>Tschüss</CardContent>
             </Card>
           </Grid>
-          <Grid item xs={2}></Grid>
+          <Grid item xs={1}></Grid>
         </Grid>
       </center>
     </WavyBackground>
