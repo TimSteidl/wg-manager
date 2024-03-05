@@ -1,11 +1,16 @@
 import { TopBar } from "@/pages/global/top-bar.tsx";
 import { ThemeProvider } from "@/components/theme-provider.tsx";
+import React from "react";
 
-export function withRoot(children: () => JSX.Element) {
-  return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <TopBar />
-      {children()}
-    </ThemeProvider>
-  );
+export default function withRoot(Component: React.ComponentType<any>) {
+
+    function WithRoot(props: any) {
+        return (
+            <ThemeProvider>
+            <TopBar />
+            <Component {...props} />
+            </ThemeProvider>
+        );
+    }
+    return WithRoot;
 }

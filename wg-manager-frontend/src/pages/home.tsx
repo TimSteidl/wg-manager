@@ -1,7 +1,8 @@
-import { withRoot } from "@/hocs/root.tsx";
+
 import { Grid } from "@mui/material";
 import { Card, CardContent, CardTitle } from "@/components/ui/card.tsx";
 import { WavyBackground } from "@/components/ui/wavy-background.tsx";
+import withRoot from "@/hocs/root.tsx";
 
 function Home() {
   return (

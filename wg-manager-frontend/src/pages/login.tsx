@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button.tsx";
-import { withRoot } from "@/hocs/root.tsx";
+import withRoot from "@/hocs/root.tsx";
+
 
 function Login() {
   return (

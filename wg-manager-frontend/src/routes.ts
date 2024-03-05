@@ -7,18 +7,18 @@ import Home from "@/pages/home.tsx";
 export const routes = createBrowserRouter([
   {
     path: "/",
-    element: Home,
+    Component: Home,
   },
   {
     path: "/login",
-    element: Login,
+    Component: Login,
   },
   {
     path: "/register",
-    element: Register,
+    Component: Register,
   },
   {
     path: "/dashboard",
-    element: Dashboard,
+    Component: Dashboard,
   },
 ]);
